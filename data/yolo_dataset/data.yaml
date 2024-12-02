@@ -155,5 +155,6 @@ names:
   153: '7_14'
   154: '8_23'
 path: data/yolo_dataset/
-train: data/yolo_dataset/train/images
-val: data/yolo_dataset/valid/images
+train: train/images
+val: valid/images
+nc: 155

@@ -16,7 +16,7 @@ model.to(device)
 scaler = GradScaler()
 
 # Начинаем тренировку модели
-model.train(data=f"{path.OUTPUT_DIR}/data.yaml", epochs=50, batch=16, imgsz=640)
+model.train(data=f"data/yolo_dataset/data.yaml", epochs=50, batch=16, imgsz=1280, name='yolov8n_only_detection')
 
 # Сохраняем обученную модель
 model.export(format="onnx")
